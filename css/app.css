@@ -347,13 +347,36 @@ html, body {
   height: 100%;
   width: 100%; }
 
-#main {
+#food-app {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  #main::after {
+  #food-app::after {
     clear: both;
     content: "";
     display: table; }
+  #food-app #query {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    background: #90AAFA; }
+    #food-app #query:last-child {
+      margin-right: 0; }
+  #food-app #button {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    #food-app #button:last-child {
+      margin-right: 0; }
+  #food-app #query-list {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    background: #33BD2B; }
+    #food-app #query-list:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=app.css.map */

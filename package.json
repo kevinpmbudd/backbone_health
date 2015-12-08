@@ -1,8 +1,8 @@
 {
-  "name": "backbone_invoice",
+  "name": "backbone_health",
   "version": "1.0.0",
-  "description": "first backbone app",
-  "main": "index.js",
+  "description": "Food Calorie Log with Backbone.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -5,7 +5,23 @@ html, body {
     width: 100%;
 }
 
-#main {
+#food-app {
 	@include outer-container;
+
+	#query {
+		@include span-columns(2);
+		background: #90AAFA;
+	}
+
+	#button {
+		@include span-columns(2);
+	}
+
+	#query-list{
+		@include span-columns(2);
+		background: #33BD2B;
+	}
+
 }
+
 
