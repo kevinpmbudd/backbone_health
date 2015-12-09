@@ -3,43 +3,137 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    color: $midnight;
+}
+
+* {
+
 }
 
 #food-app {
-	@include outer-container;
+	// @include outer-container;
+	@include display(flex);
+	@include flex-direction(column);
 
-	#query-main {
+	header {
+		// @include outer-container;
+		text-align: center;
+		background: $red-orange;
+		color: white;
+		@include flex(1);
+		height: 300px;
+	}
+
+	#main-wrapper {
+		// @include outer-container;
+		@include flex(2);
+		height: 500px;
+		background: $lime;
+
+
+		#search-area {
 			@include span-columns(4);
+			background: $orange-yellow;
+			height: 100%;
 
-			#query {
-				@include span-columns(2 of 4);
-				// @include pad();
-				height: 100%;
-				background: #90AAFA;
+			.search-bar {
+				width: 100%;
+				position: relative;
+
+				input {
+					box-sizing: border-box;
+					display: block;
+					margin: 0;
+					position: relative;
+					width: 100%;
+
+				}
+
+				button {
+					@include position(absolute, 0 0 0 null);
+					padding: 5px 10px;
+					background: $turquise;
+
+				}
+
+				img {
+					height: 12px;
+					opacity: 0.7;
+				}
 			}
 
-			#button {
-				@include span-columns(2 of 4);
-				// @include reset-display();
-				// @include pad();
-				@include omega();
-
-				margin-right: 0;
-				padding-bottom: 20px;
-			}
-
-			#query-list{
-				@include span-columns(4 of 4);
-				background: #33BD2B;
-				max-height: 200px;
-				overflow-y: auto;
-				overflow-x: hidden;
+			#query-list {
+				background: #B1B8CA;
+				max-height: 464px;
+				overflow: auto;
 			}
 
 			.view {
-				border: 1px solid black;
+				border: 2px solid white;
 			}
+
+		}
+
+		section {
+			@include span-columns(4);
+			height: 100%;
+		}
+
+		.food-list {
+			background: $orange-yellow;
+		}
+
+		.pie-chart {
+			background: $orange-yellow;
+		}
 	}
 
+	footer {
+		@include flex(3);
+		// @include outer-container;
+		background: $turquise;
+		color: #F8FFFD;
+		text-align: center;
+		height: 100px;
+	}
 }
+
+
+// .outer-wrapper {
+// 	@include outer-container;
+
+// 	#query-main {
+// 			@include span-columns(4);
+
+// 			#query {
+// 				@include span-columns(2 of 4);
+// 				// @include pad();
+// 				height: 100%;
+// 				background: #90AAFA;
+// 			}
+
+// 			#button {
+// 				@include span-columns(2 of 4);
+// 				// @include reset-display();
+// 				// @include pad();
+// 				@include omega();
+
+// 				margin-right: 0;
+// 				padding-bottom: 20px;
+// 			}
+
+// 			#query-list{
+// 				@include span-columns(4 of 4);
+// 				background: #33BD2B;
+// 				max-height: 200px;
+// 				overflow-y: auto;
+// 				overflow-x: hidden;
+// 			}
+
+// 			.view {
+// 				border: 1px solid black;
+// 			}
+// 	}
+
+// }
 

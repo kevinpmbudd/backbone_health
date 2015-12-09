@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Food Log</title>
-		<!-- The main CSS file -->
-		<link href="css/app.css" rel="stylesheet" />
-	</head>
-	<body>
-		<section id="food-app">
-			<section id="query-main">
-				<div class="search-bar">
-					<form role="search">
-						<input type="search" placeholder="Enter Search" id="query"/>
-						<button type="submit">
-							<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
-						</button>
-					</form>
-			  </div>
-				<ul id="query-list">
-				</ul>
-			</section>
-		</section>
-		<script type="text/template" id="food-item-template">
-			<div class="view">
-				<label><%= name %> calories: <%= calories %></label>
-				<button class="add">Add</button>
-		</script>
-		<script src="js/lib/jquery.min.js"></script>
-		<script src="js/lib/underscore-min.js"></script>
-		<script src="js/lib/backbone-min.js"></script>
-		<script src="js/models/food.js"></script>
-		<script src="js/collections/foods.js"></script>
-		<script src="js/collections/query.js"></script>
-		<script src="js/views/app.js"></script>
-		<script src="js/views/food.js"></script>
-		<script src="js/app.js"></script>
-	</body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Food Log</title>
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="food-app">
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <main id="main-wrapper">
+            <div id="search-area">
+                <div class="search-bar">
+                    <!-- <form role="search"> -->
+                        <input type="text" placeholder="Enter Search" id="query">
+                        <button type="submit" id="button">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png" alt="Search Icon">
+                        </button>
+                    <!-- </form> -->
+                </div>
+                <ul id="query-list"></ul>
+            </div>
+
+            <section class="food-list">
+                <h2>TODO: Food list</h2>
+                <ul id="foods"></ul>
+            </section>
+
+            <section class="pie-chart">
+                <h2>TODO: Pie Chart</h2>
+            </section>
+
+        </main>
+        <footer>
+            <h3>FOOTER</h3>
+        </footer>
+    </div>
+
+    <!-- <section id="food-app">
+        <input type="text" id="query">
+        <button id="button">search</button>
+        <ul id="query-list">
+        </ul>
+    </section> -->
+    <script type="text/template" id="food-item-template">
+        <div class="view">
+            <label>
+                <%= name %> calories:
+                    <%= calories %>
+            </label>
+            <button class="add">Add</button>
+    </script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    <script src="js/models/food.js"></script>
+    <script src="js/collections/foods.js"></script>
+    <script src="js/collections/query.js"></script>
+    <script src="js/views/app.js"></script>
+    <script src="js/views/food.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>

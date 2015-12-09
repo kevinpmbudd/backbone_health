@@ -10,11 +10,12 @@ app.AppView = Backbone.View.extend({
 	},
 
 	events: {
-		'click #button': 'queryAPI'
+		'click #button': 'queryAPI',
+		'enter #query': 'queryAPI'
 	},
 
 	addOne: function( food ) {
-		var view = new app.FoodView({ model: food });
+		var view = new app.SearchView({ model: food });
 		$('#query-list').append( view.render().el);
 	},
 
@@ -23,6 +24,7 @@ app.AppView = Backbone.View.extend({
 	},
 
 	queryAPI: function() {
+		console.log($('#query').val());
 		app.Queries.reset();
 		var APP_ID = '0226b8d8';
 	  var APP_KEY = '79c742c2ed9ff0bdbaf2731141a245f7';
@@ -42,12 +44,12 @@ app.AppView = Backbone.View.extend({
 				var results = data.hits;
 
 				results.forEach(function(result) {
-					// console.log(result.fields);
+
 					var item_name = result.fields.item_name;
 					var item_calories = result.fields.nf_calories;
 
 					app.Queries.create({ name: item_name, calories: item_calories });
-					// console.log(item_name, calories);
+					console.log(app.Queries);
 				});
 		});
 

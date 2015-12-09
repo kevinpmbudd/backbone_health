@@ -1,8 +1,8 @@
 var app = app || {};
 
-// Food Item View
+// Search Result Item View
 
-app.FoodView = Backbone.View.extend({
+app.SearchView = Backbone.View.extend({
 
 	tagName: 'li',
 
