@@ -6,6 +6,7 @@ app.AppView = Backbone.View.extend({
 
 	initialize: function() {
 		this.listenTo(app.Queries, 'add', this.addOne);
+		this.listenTo(app.Queries, 'reset', this.empty);
 	},
 
 	events: {
@@ -17,21 +18,37 @@ app.AppView = Backbone.View.extend({
 		$('#query-list').append( view.render().el);
 	},
 
+	empty: function() {
+		$('#query-list').empty();
+	},
+
 	queryAPI: function() {
+		app.Queries.reset();
+		var APP_ID = '0226b8d8';
+	  var APP_KEY = '79c742c2ed9ff0bdbaf2731141a245f7';
 		var queryTerm = $('#query').val().trim();
-		console.log(queryTerm);
+		var nutrition_url = 'https://api.nutritionix.com/v1_1/search/'
+				   + queryTerm + '?fields=item_name%2Cnf_calories&'
+				   + 'appId=' + APP_ID + '&appKey=' + APP_KEY;
 
-		$.ajax({
-			url: "https://api.nutritionix.com/v1_1/search/cheddar%20cheese?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=0226b8d8&appKey=79c742c2ed9ff0bdbaf2731141a245f7",
+		var settings = {
+        url: nutrition_url,
+        cache: true,
+        dataType: 'json'
+    };
 
-			beforeSend: function( xhr ) {
-				xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
-			}
-		})
+		$.ajax(settings)
 		.done(function( data ) {
-			if ( console && console.log ) {
-				console.log(data);
-			}
+				var results = data.hits;
+
+				results.forEach(function(result) {
+					// console.log(result.fields);
+					var item_name = result.fields.item_name;
+					var item_calories = result.fields.nf_calories;
+
+					app.Queries.create({ name: item_name, calories: item_calories });
+					// console.log(item_name, calories);
+				});
 		});
 
 	}
