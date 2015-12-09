@@ -8,14 +8,23 @@
 	</head>
 	<body>
 		<section id="food-app">
-		<input type="text" id="query">
-		<button id="button">search</button>
-		<ul id="query-list">
-		</ul>
+			<section id="query-main">
+				<div class="search-bar">
+					<form role="search">
+						<input type="search" placeholder="Enter Search" id="query"/>
+						<button type="submit">
+							<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+						</button>
+					</form>
+			  </div>
+				<ul id="query-list">
+				</ul>
+			</section>
 		</section>
 		<script type="text/template" id="food-item-template">
 			<div class="view">
 				<label><%= name %> calories: <%= calories %></label>
+				<button class="add">Add</button>
 		</script>
 		<script src="js/lib/jquery.min.js"></script>
 		<script src="js/lib/underscore-min.js"></script>

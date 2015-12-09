@@ -1,170 +1,3 @@
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
-  background-image: -moz-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
-  background-image: -ms-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
-  background-image: -o-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
-  background-image: linear-gradient(to left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 68em;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
-
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block; }
-
-audio, canvas, progress, video {
-  display: inline-block;
-  vertical-align: baseline; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden], template {
-  display: none; }
-
-a {
-  background-color: transparent; }
-
-a:active, a:hover {
-  outline: 0; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b, strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
-
-h1 {
-  font-size: 2em;
-  margin: .67em 0; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-small {
-  font-size: 80%; }
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-img {
-  border: 0; }
-
-svg:not(:root) {
-  overflow: hidden; }
-
-figure {
-  margin: 1em 40px; }
-
-hr {
-  box-sizing: content-box;
-  height: 0; }
-
-pre {
-  overflow: auto; }
-
-code, kbd, pre, samp {
-  font-family: monospace,monospace;
-  font-size: 1em; }
-
-button, input, optgroup, select, textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0; }
-
-button {
-  overflow: visible; }
-
-button, select {
-  text-transform: none; }
-
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-button[disabled], html input[disabled] {
-  cursor: default; }
-
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-input {
-  line-height: normal; }
-
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box; }
-
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: .35em .625em .75em; }
-
-legend {
-  border: 0;
-  padding: 0; }
-
-textarea {
-  overflow: auto; }
-
-optgroup {
-  font-weight: bold; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td, th {
-  padding: 0; }
-
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #477dca;
@@ -341,6 +174,194 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+  background-image: linear-gradient(to left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+  @media screen and (max-width: 699px) {
+    body:before {
+      background-image: -webkit-linear-gradient(left, transparent 0, #ccc 0, #ccc 19.43277%, transparent 19.43277%, transparent 26.85574%, #ccc 26.85574%, #ccc 46.28851%, transparent 46.28851%, transparent 53.71149%, #ccc 53.71149%, #ccc 73.14426%, transparent 73.14426%, transparent 80.56723%, #ccc 80.56723%, #ccc 100%, transparent 100%);
+      background-image: -moz-linear-gradient(left, transparent 0, #ccc 0, #ccc 19.43277%, transparent 19.43277%, transparent 26.85574%, #ccc 26.85574%, #ccc 46.28851%, transparent 46.28851%, transparent 53.71149%, #ccc 53.71149%, #ccc 73.14426%, transparent 73.14426%, transparent 80.56723%, #ccc 80.56723%, #ccc 100%, transparent 100%);
+      background-image: -ms-linear-gradient(left, transparent 0, #ccc 0, #ccc 19.43277%, transparent 19.43277%, transparent 26.85574%, #ccc 26.85574%, #ccc 46.28851%, transparent 46.28851%, transparent 53.71149%, #ccc 53.71149%, #ccc 73.14426%, transparent 73.14426%, transparent 80.56723%, #ccc 80.56723%, #ccc 100%, transparent 100%);
+      background-image: -o-linear-gradient(left, transparent 0, #ccc 0, #ccc 19.43277%, transparent 19.43277%, transparent 26.85574%, #ccc 26.85574%, #ccc 46.28851%, transparent 46.28851%, transparent 53.71149%, #ccc 53.71149%, #ccc 73.14426%, transparent 73.14426%, transparent 80.56723%, #ccc 80.56723%, #ccc 100%, transparent 100%);
+      background-image: linear-gradient(to left, transparent 0, #ccc 0, #ccc 19.43277%, transparent 19.43277%, transparent 26.85574%, #ccc 26.85574%, #ccc 46.28851%, transparent 46.28851%, transparent 53.71149%, #ccc 53.71149%, #ccc 73.14426%, transparent 73.14426%, transparent 80.56723%, #ccc 80.56723%, #ccc 100%, transparent 100%); } }
+  @media screen and (min-width: 700px) {
+    body:before {
+      background-image: -webkit-linear-gradient(left, transparent 0, #ccc 0, #ccc 9.36867%, transparent 9.36867%, transparent 12.94733%, #ccc 12.94733%, #ccc 22.316%, transparent 22.316%, transparent 25.89467%, #ccc 25.89467%, #ccc 35.26334%, transparent 35.26334%, transparent 38.842%, #ccc 38.842%, #ccc 48.21067%, transparent 48.21067%, transparent 51.78933%, #ccc 51.78933%, #ccc 61.158%, transparent 61.158%, transparent 64.73666%, #ccc 64.73666%, #ccc 74.10533%, transparent 74.10533%, transparent 77.684%, #ccc 77.684%, #ccc 87.05267%, transparent 87.05267%, transparent 90.63133%, #ccc 90.63133%, #ccc 100%, transparent 100%);
+      background-image: -moz-linear-gradient(left, transparent 0, #ccc 0, #ccc 9.36867%, transparent 9.36867%, transparent 12.94733%, #ccc 12.94733%, #ccc 22.316%, transparent 22.316%, transparent 25.89467%, #ccc 25.89467%, #ccc 35.26334%, transparent 35.26334%, transparent 38.842%, #ccc 38.842%, #ccc 48.21067%, transparent 48.21067%, transparent 51.78933%, #ccc 51.78933%, #ccc 61.158%, transparent 61.158%, transparent 64.73666%, #ccc 64.73666%, #ccc 74.10533%, transparent 74.10533%, transparent 77.684%, #ccc 77.684%, #ccc 87.05267%, transparent 87.05267%, transparent 90.63133%, #ccc 90.63133%, #ccc 100%, transparent 100%);
+      background-image: -ms-linear-gradient(left, transparent 0, #ccc 0, #ccc 9.36867%, transparent 9.36867%, transparent 12.94733%, #ccc 12.94733%, #ccc 22.316%, transparent 22.316%, transparent 25.89467%, #ccc 25.89467%, #ccc 35.26334%, transparent 35.26334%, transparent 38.842%, #ccc 38.842%, #ccc 48.21067%, transparent 48.21067%, transparent 51.78933%, #ccc 51.78933%, #ccc 61.158%, transparent 61.158%, transparent 64.73666%, #ccc 64.73666%, #ccc 74.10533%, transparent 74.10533%, transparent 77.684%, #ccc 77.684%, #ccc 87.05267%, transparent 87.05267%, transparent 90.63133%, #ccc 90.63133%, #ccc 100%, transparent 100%);
+      background-image: -o-linear-gradient(left, transparent 0, #ccc 0, #ccc 9.36867%, transparent 9.36867%, transparent 12.94733%, #ccc 12.94733%, #ccc 22.316%, transparent 22.316%, transparent 25.89467%, #ccc 25.89467%, #ccc 35.26334%, transparent 35.26334%, transparent 38.842%, #ccc 38.842%, #ccc 48.21067%, transparent 48.21067%, transparent 51.78933%, #ccc 51.78933%, #ccc 61.158%, transparent 61.158%, transparent 64.73666%, #ccc 64.73666%, #ccc 74.10533%, transparent 74.10533%, transparent 77.684%, #ccc 77.684%, #ccc 87.05267%, transparent 87.05267%, transparent 90.63133%, #ccc 90.63133%, #ccc 100%, transparent 100%);
+      background-image: linear-gradient(to left, transparent 0, #ccc 0, #ccc 9.36867%, transparent 9.36867%, transparent 12.94733%, #ccc 12.94733%, #ccc 22.316%, transparent 22.316%, transparent 25.89467%, #ccc 25.89467%, #ccc 35.26334%, transparent 35.26334%, transparent 38.842%, #ccc 38.842%, #ccc 48.21067%, transparent 48.21067%, transparent 51.78933%, #ccc 51.78933%, #ccc 61.158%, transparent 61.158%, transparent 64.73666%, #ccc 64.73666%, #ccc 74.10533%, transparent 74.10533%, transparent 77.684%, #ccc 77.684%, #ccc 87.05267%, transparent 87.05267%, transparent 90.63133%, #ccc 90.63133%, #ccc 100%, transparent 100%); } }
+  @media screen and (min-width: 1000px) {
+    body:before {
+      background-image: -webkit-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+      background-image: -moz-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+      background-image: -ms-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+      background-image: -o-linear-gradient(left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%);
+      background-image: linear-gradient(to left, transparent 0, #ccc 0, #ccc 6.17215%, transparent 6.17215%, transparent 8.5298%, #ccc 8.5298%, #ccc 14.70196%, transparent 14.70196%, transparent 17.05961%, #ccc 17.05961%, #ccc 23.23176%, transparent 23.23176%, transparent 25.58941%, #ccc 25.58941%, #ccc 31.76157%, transparent 31.76157%, transparent 34.11922%, #ccc 34.11922%, #ccc 40.29137%, transparent 40.29137%, transparent 42.64902%, #ccc 42.64902%, #ccc 48.82117%, transparent 48.82117%, transparent 51.17883%, #ccc 51.17883%, #ccc 57.35098%, transparent 57.35098%, transparent 59.70863%, #ccc 59.70863%, #ccc 65.88078%, transparent 65.88078%, transparent 68.23843%, #ccc 68.23843%, #ccc 74.41059%, transparent 74.41059%, transparent 76.76824%, #ccc 76.76824%, #ccc 82.94039%, transparent 82.94039%, transparent 85.29804%, #ccc 85.29804%, #ccc 91.4702%, transparent 91.4702%, transparent 93.82785%, #ccc 93.82785%, #ccc 100.0%, transparent 100.0%); } }
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -355,28 +376,44 @@ html, body {
     clear: both;
     content: "";
     display: table; }
-  #food-app #query {
+  #food-app #query-main {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 14.70196%;
-    background: #90AAFA; }
-    #food-app #query:last-child {
+    width: 31.76157%; }
+    #food-app #query-main:last-child {
       margin-right: 0; }
-  #food-app #button {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%; }
-    #food-app #button:last-child {
-      margin-right: 0; }
-  #food-app #query-list {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-    background: #33BD2B; }
-    #food-app #query-list:last-child {
-      margin-right: 0; }
+    #food-app #query-main #query {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 46.28851%;
+      height: 100%;
+      background: #90AAFA; }
+      #food-app #query-main #query:last-child {
+        margin-right: 0; }
+    #food-app #query-main #button {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 46.28851%;
+      margin-right: 0;
+      margin-right: 0;
+      padding-bottom: 20px; }
+      #food-app #query-main #button:last-child {
+        margin-right: 0; }
+    #food-app #query-main #query-list {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      background: #33BD2B;
+      max-height: 200px;
+      overflow-y: auto;
+      overflow-x: hidden; }
+      #food-app #query-main #query-list:last-child {
+        margin-right: 0; }
+    #food-app #query-main .view {
+      border: 1px solid black; }
 
 /*# sourceMappingURL=app.css.map */

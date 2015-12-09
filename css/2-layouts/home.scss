@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#food-app {
+	@include outer-container;
+
+	#query-main {
+			@include span-columns(4);
+
+			#query {
+				@include span-columns(2 of 4);
+				// @include pad();
+				height: 100%;
+				background: #90AAFA;
+			}
+
+			#button {
+				@include span-columns(2 of 4);
+				// @include reset-display();
+				// @include pad();
+				@include omega();
+
+				margin-right: 0;
+				padding-bottom: 20px;
+			}
+
+			#query-list{
+				@include span-columns(4 of 4);
+				background: #33BD2B;
+				max-height: 200px;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+
+			.view {
+				border: 1px solid black;
+			}
+	}
+
+}
+

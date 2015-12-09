@@ -9,22 +9,16 @@ app.FoodView = Backbone.View.extend({
 	template: _.template( $('#food-item-template').html()),
 
 	events: {
-		'click #button': 'queryAPI'
 	},
 
 	initialize: function() {
-		_.bindAll(this, 'queryAPI');
+		// _.bindAll(this, 'queryAPI');
 	},
 
 	render: function() {
 		this.$el.html( this.template( this.model.attributes ) );
 
 		return this;
-	},
-
-	queryAPI: function() {
-		var queryTerm = this.$('#query').val().trim();
-		console.log(el);
 	}
 
 });
