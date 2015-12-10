@@ -9,16 +9,25 @@ app.FoodView = Backbone.View.extend({
 	template: _.template( $('#food-item-template').html()),
 
 	events: {
-		'dblclick label': 'edit'
+		 'click .remove': 'removeFood'
 	},
 
 	initialize: function() {
+		this.listenTo(this.model, 'change', this.render);
 	},
 
 	render: function() {
 		this.$el.html( this.template( this.model.attributes ) );
 
 		return this;
+	},
+
+	removeFood: function() {
+		this.model.destroy();
+
+		this.remove();
+
+		console.log(app.Foods);
 	}
 
 });

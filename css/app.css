@@ -438,10 +438,10 @@ html, body {
           height: 12px;
           opacity: 0.7; }
       #food-app #main-wrapper #search-area #query-list {
-        background: #B1B8CA;
+        background: #FFB400;
         max-height: 464px;
         overflow: auto; }
-      #food-app #main-wrapper #search-area .view {
+      #food-app #main-wrapper #search-area .search-item {
         border: 2px solid white; }
     #food-app #main-wrapper section {
       float: left;
@@ -452,7 +452,11 @@ html, body {
       #food-app #main-wrapper section:last-child {
         margin-right: 0; }
     #food-app #main-wrapper .food-list {
-      background: #FFB400; }
+      background: #FFB400;
+      max-height: 464px;
+      overflow: auto; }
+      #food-app #main-wrapper .food-list .view {
+        border: 2px solid white; }
     #food-app #main-wrapper .pie-chart {
       background: #FFB400; }
   #food-app footer {

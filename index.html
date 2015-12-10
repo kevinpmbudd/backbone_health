@@ -40,14 +40,17 @@
         </footer>
     </div>
 
-    <!-- <section id="food-app">
-        <input type="text" id="query">
-        <button id="button">search</button>
-        <ul id="query-list">
-        </ul>
-    </section> -->
     <script type="text/template" id="food-item-template">
         <div class="view">
+            <label>
+                <%= name %> calories:
+                    <%= calories %>
+            </label>
+            <button class="remove">Remove</button>
+    </script>
+
+    <script type="text/template" id="search-item-template">
+        <div class="search-item">
             <label>
                 <%= name %> calories:
                     <%= calories %>
@@ -62,6 +65,7 @@
     <script src="js/collections/query.js"></script>
     <script src="js/views/app.js"></script>
     <script src="js/views/food.js"></script>
+    <script src="js/views/search.js"></script>
     <script src="js/app.js"></script>
 </body>
 

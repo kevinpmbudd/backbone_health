@@ -63,12 +63,12 @@ html, body {
 			}
 
 			#query-list {
-				background: #B1B8CA;
+				background: $orange-yellow;
 				max-height: 464px;
 				overflow: auto;
 			}
 
-			.view {
+			.search-item {
 				border: 2px solid white;
 			}
 
@@ -81,6 +81,13 @@ html, body {
 
 		.food-list {
 			background: $orange-yellow;
+			max-height: 464px;
+			overflow: auto;
+
+			.view {
+				border: 2px solid white;
+			}
+
 		}
 
 		.pie-chart {
