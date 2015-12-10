@@ -6,12 +6,8 @@ html, body {
     color: $midnight;
 }
 
-* {
-
-}
-
 #food-app {
-	// @include outer-container;
+	@include outer-container;
 	@include display(flex);
 	@include flex-direction(column);
 
@@ -21,20 +17,51 @@ html, body {
 		background: $red-orange;
 		color: white;
 		@include flex(1);
-		height: 300px;
+		height: 250px;
+		padding-top: 50px;
+
+		@include media($medium-screen) {
+       @include span-columns(8);
+       height: 175px;
+       padding-top: 20px;
+       font-size: .9em;
+       // border: 3px solid $lime;
+    }
+
+		@include media($small-screen) {
+       @include span-columns(4);
+       height: 125px;
+       padding-top: 0;
+       font-size: .8em;
+       border: 3px solid $lime;
+    }
 	}
 
 	#main-wrapper {
 		// @include outer-container;
 		@include flex(2);
-		height: 500px;
+		height: 400px;
 		background: $lime;
 
 
 		#search-area {
+
 			@include span-columns(4);
 			background: $orange-yellow;
 			height: 100%;
+
+
+			// @include media($medium-screen) {
+   //     @include span-columns(3);
+   //     font-size: .8em;
+   //     // max-height: 150px;
+   //  	}
+
+			// @include media($small-screen) {
+   //     @include span-columns(4);
+   //     font-size: .8em;
+   //     max-height: 150px;
+   //  	}
 
 			.search-bar {
 				width: 100%;
@@ -64,14 +91,23 @@ html, body {
 
 			#query-list {
 				background: $orange-yellow;
-				max-height: 464px;
+				max-height: 364px;
 				overflow: auto;
+				text-align: center;
+
+				@include media($small-screen) {
+		       max-height: 83%;
+    		}
 			}
 
 			.search-item {
 				border: 2px solid white;
-			}
 
+				button {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+			}
 		}
 
 		section {
@@ -79,68 +115,87 @@ html, body {
 			height: 100%;
 		}
 
+			// @include media($small-screen) {
+   //     @include span-columns(4);
+   //     font-size: .8em;
+   //   }
+		// }
+
 		.food-list {
 			background: $orange-yellow;
-			max-height: 464px;
 			overflow: auto;
+			text-align: center;
+			padding-top: 10px;
+
+			// @include media($medium-screen) {
+   //     @include span-columns(4);
+   //     font-size: .8em;
+   //   }
+
+			// @include media($small-screen) {
+   //     max-height: 150px;
+   //     margin-top: 15px;
+   //  	}
 
 			.view {
 				border: 2px solid white;
+
+				button {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
 			}
 
 		}
 
 		.pie-chart {
 			background: $orange-yellow;
+			text-align: center;
+			padding-top: 10px;
+
+			#totals {
+				font-size: 1.5em;
+			}
+
+			#plot1 {
+				height: 100%;
+			}
+
+			// @include media($medium-screen) {
+   //     @include span-columns(8);
+   //     font-size: .8em;
+   //     max-height: 100px;
+   //  	}
+
+			// @include media($small-screen) {
+   //     max-height: 75px;
+   //     margin-top: 15px;
+   //  	}
 		}
 	}
 
 	footer {
-		@include flex(3);
-		// @include outer-container;
+		// @include flex();
+		@include outer-container;
 		background: $turquise;
 		color: #F8FFFD;
 		text-align: center;
 		height: 100px;
-	}
+
+		h3 {
+			position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
+		}
+
+		@include media($medium-screen) {
+       @include span-columns(8);
+       max-height: 75px;
+    	}
+
+		@include media($small-screen) {
+       max-height: 50px;
+    	}
 }
 
-
-// .outer-wrapper {
-// 	@include outer-container;
-
-// 	#query-main {
-// 			@include span-columns(4);
-
-// 			#query {
-// 				@include span-columns(2 of 4);
-// 				// @include pad();
-// 				height: 100%;
-// 				background: #90AAFA;
-// 			}
-
-// 			#button {
-// 				@include span-columns(2 of 4);
-// 				// @include reset-display();
-// 				// @include pad();
-// 				@include omega();
-
-// 				margin-right: 0;
-// 				padding-bottom: 20px;
-// 			}
-
-// 			#query-list{
-// 				@include span-columns(4 of 4);
-// 				background: #33BD2B;
-// 				max-height: 200px;
-// 				overflow-y: auto;
-// 				overflow-x: hidden;
-// 			}
-
-// 			.view {
-// 				border: 1px solid black;
-// 			}
-// 	}
-
-// }
-
+}

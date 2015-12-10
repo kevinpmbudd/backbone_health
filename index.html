@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Log</title>
     <link href="css/app.css" rel="stylesheet" />
 </head>
@@ -10,9 +11,12 @@
 <body>
     <div id="food-app">
         <header>
-            <h1>HEADER</h1>
+            <h1>LOOK BEFORE YOU LEAP</h1>
+            <h3>count calories today</h3>
         </header>
+
         <main id="main-wrapper">
+
             <div id="search-area">
                 <div class="search-bar">
                     <!-- <form role="search"> -->
@@ -26,17 +30,20 @@
             </div>
 
             <section class="food-list">
-                <h2>TODO: Food list</h2>
+                <h2>Food list</h2>
                 <ul id="foods"></ul>
             </section>
 
             <section class="pie-chart">
-                <h2>TODO: Pie Chart</h2>
+                <h2>Total Calories</h2>
+                <div id="totals">0</div>
+                <div id="plot1"></div>
             </section>
 
         </main>
+
         <footer>
-            <h3>FOOTER</h3>
+            <h3>you are what you eat</h3>
         </footer>
     </div>
 
@@ -60,9 +67,12 @@
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/underscore-min.js"></script>
     <script src="js/lib/backbone-min.js"></script>
+    <script src="js/lib/d3-min.js"></script>
     <script src="js/models/food.js"></script>
+    <script src="js/models/datapoint.js"></script>
     <script src="js/collections/foods.js"></script>
     <script src="js/collections/query.js"></script>
+    <script src="js/d3/dataseries.js"></script>
     <script src="js/views/app.js"></script>
     <script src="js/views/food.js"></script>
     <script src="js/views/search.js"></script>

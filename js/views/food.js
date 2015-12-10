@@ -27,7 +27,7 @@ app.FoodView = Backbone.View.extend({
 
 		this.remove();
 
-		console.log(app.Foods);
+		$('#totals').text(app.Foods.totals());
 	}
 
 });

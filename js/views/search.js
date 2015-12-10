@@ -23,11 +23,24 @@ app.SearchView = Backbone.View.extend({
 	},
 
 	addToFoods: function() {
-		console.log(this.model.attributes);
 		var item_name = this.model.attributes.name;
 		var item_calories = this.model.attributes.calories;
 
 		app.Foods.create({ name: item_name, calories: item_calories });
+		$('#totals').text(app.Foods.totals());
+
+		var series = new app.DataSeries();
+
+		var plot = new Backbone.d3.Canned.Pie.View( series, {
+
+			div: '#plot1',
+			name: 'Calories',
+			radius: 85
+
+		});
+
+		series.add(new app.DataPoint({value: item_calories}));
+
 	}
 
 });
