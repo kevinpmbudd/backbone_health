@@ -5,9 +5,12 @@ app.AppView = Backbone.View.extend({
 	el: '#food-app',
 
 	initialize: function() {
-		this.listenTo(app.Queries, 'add', this.addSearchResult);
-		this.listenTo(app.Queries, 'reset', this.emptySearchResults);
-		this.listenTo(app.Foods, 'add', this.addFood);
+		this.queries = this.$('#query-list');
+		this.foods = this.$('#foods');
+
+		this.listenTo(app.QueryFirebase, 'add', this.addSearchResult);
+		this.listenTo(app.QueryFirebase, 'reset', this.emptySearchResults);
+		this.listenTo(app.FoodsFirebase, 'add', this.addFood);
 	},
 
 	events: {
@@ -17,15 +20,16 @@ app.AppView = Backbone.View.extend({
 
 	addSearchResult: function( food ) {
 		var view = new app.SearchView({ model: food });
-		$('#query-list').append(view.render().el);
+		this.queries.append(view.render().el);
 	},
 
 	emptySearchResults: function() {
-		$('#query-list').empty();
+		this.queries.empty();
 	},
 
 	queryAPI: function() {
-		app.Queries.reset();
+		// console.log(app.QueryFirebase);
+		app.QueryFirebase.reset();
 		var APP_ID = '0226b8d8';
 		var APP_KEY = '79c742c2ed9ff0bdbaf2731141a245f7';
 		var queryTerm = $('#query').val().trim();
@@ -46,13 +50,13 @@ app.AppView = Backbone.View.extend({
 				var item_name = result.fields.item_name;
 				var item_calories = result.fields.nf_calories;
 
-				app.Queries.create({ name: item_name, calories: item_calories });
+				app.QueryFirebase.add({ name: item_name, calories: item_calories });
       });
 		});
 	},
 
 	addFood: function( food ) {
 		var view = new app.FoodView({ model: food });
-		$('#foods').append(view.render().el);
+		this.foods.append(view.render().el);
 	}
 });

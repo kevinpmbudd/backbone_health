@@ -10,13 +10,4 @@ $(function(){
 
     new app.AppView();
 
-    // app.Queries.create({ name: 'hello', calories: 100 });
-    // app.Queries.create({ name: 'hello', calories: 100 });
-    // app.Queries.create({ name: 'hello', calories: 100 });
-    // app.Queries.create({ name: 'hello', calories: 100 });
-    // app.Queries.create({ name: 'hello', calories: 100 });
-    // app.Queries.create({ name: 'hello', calories: 100 });
-    // app.Queries.create({ name: 'hello', calories: 100 });
-    // app.Queries.create({ name: 'hello', calories: 100 });
-
 });

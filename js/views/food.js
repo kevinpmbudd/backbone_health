@@ -27,7 +27,7 @@ app.FoodView = Backbone.View.extend({
 
 		this.remove();
 
-		$('#totals').text(app.Foods.totals());
+		$('#totals').text(app.FoodsFirebase.totals());
 	}
 
 });

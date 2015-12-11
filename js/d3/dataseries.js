@@ -1,15 +1,15 @@
-var app = app || {};
+// var app = app || {};
 
-app.DataSeries = Backbone.d3.PlotCollection.extend({
+// app.DataSeries = Backbone.d3.PlotCollection.extend({
 
-	model : app.DataPoint,
+// 	model : app.DataPoint,
 
-	url : "data",
+// 	url : "data",
 
-	plottype: "pie",
+// 	plottype: "pie",
 
-	fetch: function(){
-    console.log('fetching is a no op in this example');
-  }
+// 	fetch: function(){
+//     console.log('fetching is a no op in this example');
+//   }
 
-});
+// });

@@ -18,9 +18,10 @@
         <main id="main-wrapper">
 
             <div id="search-area">
+                <h2 style="text-align:center; padding-top: 10px">Search</h2>
                 <div class="search-bar">
                     <!-- <form role="search"> -->
-                        <input type="text" placeholder="Enter Search" id="query">
+                        <input type="text" placeholder="Enter a food here" id="query">
                         <button type="submit" id="button">
                             <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png" alt="Search Icon">
                         </button>
@@ -50,8 +51,7 @@
     <script type="text/template" id="food-item-template">
         <div class="view">
             <label>
-                <%= name %> calories:
-                    <%= calories %>
+                <%= name %> calories:<%= calories %>
             </label>
             <button class="remove">Remove</button>
     </script>
@@ -59,20 +59,21 @@
     <script type="text/template" id="search-item-template">
         <div class="search-item">
             <label>
-                <%= name %> calories:
-                    <%= calories %>
+                <%= name %> calories:<%= calories %>
             </label>
             <button class="add">Add</button>
     </script>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/underscore-min.js"></script>
     <script src="js/lib/backbone-min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/backbonefire/0.5.1/backbonefire.min.js"></script>
+    <script src="js/d3/dataseries.js"></script>
     <script src="js/lib/d3-min.js"></script>
     <script src="js/models/food.js"></script>
     <script src="js/models/datapoint.js"></script>
-    <script src="js/collections/foods.js"></script>
-    <script src="js/collections/query.js"></script>
-    <script src="js/d3/dataseries.js"></script>
+    <script src="js/collections/foodsFirebase.js"></script>
+    <script src="js/collections/queryFirebase.js"></script>
     <script src="js/views/app.js"></script>
     <script src="js/views/food.js"></script>
     <script src="js/views/search.js"></script>

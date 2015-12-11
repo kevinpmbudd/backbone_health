@@ -26,21 +26,11 @@ app.SearchView = Backbone.View.extend({
 		var item_name = this.model.attributes.name;
 		var item_calories = this.model.attributes.calories;
 
-		app.Foods.create({ name: item_name, calories: item_calories });
-		$('#totals').text(app.Foods.totals());
+		app.FoodsFirebase.create({ name: item_name, calories: item_calories });
+		$('#totals').text(app.FoodsFirebase.totals());
+		$('#query').val("");
 
-		var series = new app.DataSeries();
-
-		var plot = new Backbone.d3.Canned.Pie.View( series, {
-
-			div: '#plot1',
-			name: 'Calories',
-			radius: 85
-
-		});
-
-		series.add(new app.DataPoint({value: item_calories}));
-
+		app.QueryFirebase.reset();
 	}
 
 });

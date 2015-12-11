@@ -91,7 +91,7 @@ html, body {
 
 			#query-list {
 				background: $orange-yellow;
-				max-height: 364px;
+				max-height: 322px;
 				overflow: auto;
 				text-align: center;
 
@@ -102,6 +102,7 @@ html, body {
 
 			.search-item {
 				border: 2px solid white;
+				margin-bottom: 5px;
 
 				button {
 					padding-top: 0;
@@ -139,6 +140,7 @@ html, body {
 
 			.view {
 				border: 2px solid white;
+				margin-bottom: 5px;
 
 				button {
 					padding-top: 0;
@@ -175,6 +177,7 @@ html, body {
 	}
 
 	footer {
+
 		// @include flex();
 		@include outer-container;
 		background: $turquise;
