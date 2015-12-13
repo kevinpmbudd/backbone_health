@@ -90,14 +90,19 @@ html, body {
 			}
 
 			#query-list {
+				// display: none;
+				position: relative;
+				top: 100%;
 				background: $orange-yellow;
 				max-height: 322px;
 				overflow: auto;
 				text-align: center;
 
-				@include media($small-screen) {
-		       max-height: 83%;
-    		}
+				li {
+					position: absolute;
+					// z-index: 99;
+					width: 100%;
+				}
 			}
 
 			.search-item {

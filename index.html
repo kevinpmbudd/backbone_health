@@ -28,10 +28,19 @@
                     <!-- </form> -->
                 </div>
                 <ul id="query-list"></ul>
+                <label for="number">Select a number</label>
+                <select name="number" id="number">
+                  <option>1</option>
+                  <option selected="selected">2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
             </div>
 
             <section class="food-list">
                 <h2>Food list</h2>
+                <p>Date: <input type="text" id="datepicker"></p>
                 <ul id="foods"></ul>
             </section>
 
@@ -44,9 +53,11 @@
         </main>
 
         <footer>
-            <h3>you are what you eat</h3>
+            <h3>you are what you eat & things aren't as they seem</h3>
         </footer>
     </div>
+
+
 
     <script type="text/template" id="food-item-template">
         <div class="view">
@@ -64,6 +75,7 @@
             <button class="add">Add</button>
     </script>
     <script src="js/lib/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="js/lib/underscore-min.js"></script>
     <script src="js/lib/backbone-min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
@@ -78,6 +90,12 @@
     <script src="js/views/food.js"></script>
     <script src="js/views/search.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+      $(function() {
+        $( "#datepicker" ).datepicker();
+      });
+    </script>
 </body>
 
 </html>
