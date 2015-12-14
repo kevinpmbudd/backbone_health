@@ -469,18 +469,46 @@ html, body {
           height: 12px;
           opacity: 0.7; }
       #food-app #main-wrapper #search-area #query-list {
-        position: relative;
-        top: 100%;
         background: #FFB400;
         max-height: 322px;
         overflow: auto;
         text-align: center; }
         #food-app #main-wrapper #search-area #query-list li {
-          position: absolute;
           width: 100%; }
       #food-app #main-wrapper #search-area .search-item {
         border: 2px solid white;
         margin-bottom: 5px; }
+        #food-app #main-wrapper #search-area .search-item .qty-add-container {
+          max-width: 68em;
+          margin-left: auto;
+          margin-right: auto; }
+          #food-app #main-wrapper #search-area .search-item .qty-add-container::after {
+            clear: both;
+            content: "";
+            display: table; }
+          #food-app #main-wrapper #search-area .search-item .qty-add-container #qty {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 14.70196%;
+            margin-left: 8.5298%; }
+            #food-app #main-wrapper #search-area .search-item .qty-add-container #qty:last-child {
+              margin-right: 0; }
+          #food-app #main-wrapper #search-area .search-item .qty-add-container #number {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 14.70196%; }
+            #food-app #main-wrapper #search-area .search-item .qty-add-container #number:last-child {
+              margin-right: 0; }
+          #food-app #main-wrapper #search-area .search-item .qty-add-container #button-add {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 31.76157%;
+            margin-left: 17.05961%; }
+            #food-app #main-wrapper #search-area .search-item .qty-add-container #button-add:last-child {
+              margin-right: 0; }
         #food-app #main-wrapper #search-area .search-item button {
           padding-top: 0;
           padding-bottom: 0; }
@@ -500,6 +528,35 @@ html, body {
       #food-app #main-wrapper .food-list .view {
         border: 2px solid white;
         margin-bottom: 5px; }
+        #food-app #main-wrapper .food-list .view .food-info-container {
+          max-width: 68em;
+          margin-left: auto;
+          margin-right: auto; }
+          #food-app #main-wrapper .food-list .view .food-info-container::after {
+            clear: both;
+            content: "";
+            display: table; }
+          #food-app #main-wrapper .food-list .view .food-info-container #calories {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 23.23176%; }
+            #food-app #main-wrapper .food-list .view .food-info-container #calories:last-child {
+              margin-right: 0; }
+          #food-app #main-wrapper .food-list .view .food-info-container #qty {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 14.70196%; }
+            #food-app #main-wrapper .food-list .view .food-info-container #qty:last-child {
+              margin-right: 0; }
+          #food-app #main-wrapper .food-list .view .food-info-container #button-remove {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 31.76157%; }
+            #food-app #main-wrapper .food-list .view .food-info-container #button-remove:last-child {
+              margin-right: 0; }
         #food-app #main-wrapper .food-list .view button {
           padding-top: 0;
           padding-bottom: 0; }

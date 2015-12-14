@@ -25,10 +25,13 @@ app.SearchView = Backbone.View.extend({
 	addToFoods: function() {
 		var item_name = this.model.attributes.name;
 		var item_calories = this.model.attributes.calories;
+		var $qty = this.$('#number').val();
 
-		app.FoodsFirebase.create({ name: item_name, calories: item_calories });
+		app.FoodsFirebase.create({ name: item_name, calories: item_calories, quantity: $qty });
 		$('#totals').text(app.FoodsFirebase.totals());
 		$('#query').val("");
+
+		console.log($qty);
 
 		app.QueryFirebase.reset();
 	}

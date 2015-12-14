@@ -28,19 +28,13 @@
                     <!-- </form> -->
                 </div>
                 <ul id="query-list"></ul>
-                <label for="number">Select a number</label>
-                <select name="number" id="number">
-                  <option>1</option>
-                  <option selected="selected">2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+
             </div>
 
             <section class="food-list">
                 <h2>Food list</h2>
-                <p>Date: <input type="text" id="datepicker"></p>
+                <!-- TODO: date picker -->
+                <!-- <p>Date: <input type="text" id="datepicker"></p> -->
                 <ul id="foods"></ul>
             </section>
 
@@ -61,10 +55,16 @@
 
     <script type="text/template" id="food-item-template">
         <div class="view">
-            <label>
-                <%= name %> calories:<%= calories %>
+            <label id="food">
+                <%= name %>
             </label>
-            <button class="remove">Remove</button>
+            <div class="food-info-container"
+                <label id="calories">
+                    calories: <%= calories * quantity %>
+                </label>
+                <label id="qty">Qty. <%= quantity %> </label>
+                <button id="button-remove" class="remove">Remove</button>
+            </div>
     </script>
 
     <script type="text/template" id="search-item-template">
@@ -72,7 +72,17 @@
             <label>
                 <%= name %> calories:<%= calories %>
             </label>
-            <button class="add">Add</button>
+            <div class="qty-add-container">
+                <label id="qty" for="number">Qty.</label>
+                    <select name="number" id="number">
+                      <option selected="selected">1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                <button id="button-add" class="add">Add</button>
+            </div>
     </script>
     <script src="js/lib/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

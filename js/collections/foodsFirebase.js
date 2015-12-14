@@ -12,7 +12,7 @@ var FoodsFirebaseList = Backbone.Firebase.Collection.extend({
 
 		this.each(function ( food ) {
 			// console.log(food);
-			calories += food.attributes.calories;
+			calories += food.attributes.calories * food.attributes.quantity;
 		});
 
 		return calories;
