@@ -44,6 +44,7 @@ app.AppView = Backbone.View.extend({
 		$.ajax(settings)
 		.done(function(data) {
 			var results = data.hits;
+			// console.log(data);
 
 			results.forEach(function(result) {
 

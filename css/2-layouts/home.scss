@@ -8,234 +8,414 @@ html, body {
 
 #food-app {
 	@include outer-container;
-	@include display(flex);
-	@include flex-direction(column);
+	// @include display(flex);
+	// @include flex-direction(column);
 
 	header {
+		@include row();
 		// @include outer-container;
 		text-align: center;
-		background: $red-orange;
-		color: white;
-		@include flex(1);
+		// background: $red-orange;
+		// color: white;
+		// @include flex(1);
 		height: 250px;
-		padding-top: 50px;
-
-		@include media($medium-screen) {
-       @include span-columns(8);
-       height: 175px;
-       padding-top: 20px;
-       font-size: .9em;
-       // border: 3px solid $lime;
-    }
-
-		@include media($small-screen) {
-       @include span-columns(4);
-       height: 125px;
-       padding-top: 0;
-       font-size: .8em;
-       border: 3px solid $lime;
-    }
+		// padding-top: 50px;
 	}
 
 	#main-wrapper {
-		// @include outer-container;
-		@include flex(2);
+		@include row();
 		height: 400px;
-		background: $lime;
+		// @include outer-container;
+		// @include flex(2);
+		// height: 400px;
+		// background: $lime;
 
+		.search-foodlist-col {
+			@include span-columns(6 of 12);
 
-		#search-area {
+			#search-area {
 
-			@include span-columns(4);
-			background: $orange-yellow;
-			height: 100%;
+				// @include span-columns(4);
+				// background: $orange-yellow;
+				// height: 100%;
 
-
-			// @include media($medium-screen) {
-   //     @include span-columns(3);
-   //     font-size: .8em;
-   //     // max-height: 150px;
-   //  	}
-
-			// @include media($small-screen) {
-   //     @include span-columns(4);
-   //     font-size: .8em;
-   //     max-height: 150px;
-   //  	}
-
-			.search-bar {
-				width: 100%;
-				position: relative;
-
-				input {
-					box-sizing: border-box;
-					display: block;
-					margin: 0;
+				.search-bar {
+					width: 100%;
 					position: relative;
-					width: 100%;
 
+					input {
+						box-sizing: border-box;
+						display: block;
+						margin: 0;
+						position: relative;
+						width: 100%;
+
+					}
+
+					button {
+						@include position(absolute, 0 0 0 null);
+						padding: 5px 10px;
+						background: $turquise;
+
+					}
+
+					img {
+						height: 12px;
+						opacity: 0.7;
+					}
 				}
 
-				button {
-					@include position(absolute, 0 0 0 null);
-					padding: 5px 10px;
-					background: $turquise;
+				#query-list {
+					display: block;
+					position: absolute;
+					// top: 100%;
+					background: white;
+					color: black;
+					max-height: 300px;
+					overflow: auto;
+					transition: background-color 0.5s ease;
+					// text-align: center;
 
+					li {
+						transition: background-color 0.5s ease;
+						// position: absolute;
+						// z-index: 99;
+						// width: 100%;
+					}
 				}
 
-				img {
-					height: 12px;
-					opacity: 0.7;
+				.search-item {
+					// border: 2px solid white;
+					// margin-bottom: 5px;
+
+					.qty-add-container {
+						// @include outer-container;
+
+						#qty{
+							// @include span-columns(2);
+							// @include shift(1);
+						}
+						#number{
+							// @include span-columns(2);
+						}
+						#button-add{
+							// @include span-columns(4);
+							// @include shift(2);
+						}
+					}
+
+					button {
+						// padding-top: 0;
+						// padding-bottom: 0;
+					}
 				}
 			}
 
-			#query-list {
-				// display: none;
-				// position: relative;
-				// top: 100%;
+			section {
+				// @include span-columns(4);
+				// height: 100%;
+			}
+
+			.food-list {
 				background: $orange-yellow;
-				max-height: 322px;
 				overflow: auto;
+				max-height: 300px;
 				text-align: center;
+				padding-top: 10px;
+				margin-top: 20px;
 
-				li {
-					// position: absolute;
-					// z-index: 99;
-					width: 100%;
-				}
-			}
+				.view {
+					// border: 2px solid white;
+					// margin-bottom: 5px;
 
-			.search-item {
-				border: 2px solid white;
-				margin-bottom: 5px;
+					.food-info-container {
+						@include outer-container;
 
-				.qty-add-container {
-					@include outer-container;
-
-					#qty{
-						@include span-columns(2);
-						@include shift(1);
+						#calories{
+							@include span-columns(3);
+							@include shift(1);
+						}
+						#qty{
+							@include span-columns(2);
+						}
+						#button-remove{
+							@include span-columns(4);
+							@include shift(2);
+						}
 					}
-					#number{
-						@include span-columns(2);
-					}
-					#button-add{
-						@include span-columns(4);
-						@include shift(2);
+
+					button {
+						padding-top: 0;
+						padding-bottom: 0;
 					}
 				}
 
-				button {
-					padding-top: 0;
-					padding-bottom: 0;
-				}
 			}
 		}
 
-		section {
-			@include span-columns(4);
-			height: 100%;
-		}
+		.results-area {
+			@include span-columns(6 of 12);
 
-			// @include media($small-screen) {
-   //     @include span-columns(4);
-   //     font-size: .8em;
-   //   }
-		// }
+			.pie-chart {
+				// background: $orange-yellow;
+				// text-align: center;
+				// padding-top: 10px;
 
-		.food-list {
-			background: $orange-yellow;
-			overflow: auto;
-			text-align: center;
-			padding-top: 10px;
-
-			// @include media($medium-screen) {
-   //     @include span-columns(4);
-   //     font-size: .8em;
-   //   }
-
-			// @include media($small-screen) {
-   //     max-height: 150px;
-   //     margin-top: 15px;
-   //  	}
-
-			.view {
-				border: 2px solid white;
-				margin-bottom: 5px;
-
-				.food-info-container {
-					@include outer-container;
-
-					#calories{
-						@include span-columns(3);
-						// @include shift(1);
-					}
-					#qty{
-						@include span-columns(2);
-					}
-					#button-remove{
-						@include span-columns(4);
-						// @include shift(2);
-					}
-				}
-
-				button {
-					padding-top: 0;
-					padding-bottom: 0;
+				#totals {
+					// font-size: 1.5em;
 				}
 			}
-
-		}
-
-		.pie-chart {
-			background: $orange-yellow;
-			text-align: center;
-			padding-top: 10px;
-
-			#totals {
-				font-size: 1.5em;
-			}
-
-			#plot1 {
-				height: 100%;
-			}
-
-			// @include media($medium-screen) {
-   //     @include span-columns(8);
-   //     font-size: .8em;
-   //     max-height: 100px;
-   //  	}
-
-			// @include media($small-screen) {
-   //     max-height: 75px;
-   //     margin-top: 15px;
-   //  	}
 		}
 	}
 
 	footer {
-
+		@include row();
 		// @include flex();
-		@include outer-container;
-		background: $turquise;
-		color: #F8FFFD;
+		// @include outer-container;
+		// background: $turquise;
+		// color: #F8FFFD;
 		text-align: center;
 		height: 100px;
 
 		h3 {
-			position: relative;
-    	top: 50%;
-    	transform: translateY(-50%);
+			// position: relative;
+   //  	top: 50%;
+   //  	transform: translateY(-50%);
 		}
-
-		@include media($medium-screen) {
-       @include span-columns(8);
-       max-height: 75px;
-    	}
-
-		@include media($small-screen) {
-       max-height: 50px;
-    	}
-}
+	}
 
 }
+
+// #food-app {
+// 	@include outer-container;
+// 	@include display(flex);
+// 	@include flex-direction(column);
+
+// 	header {
+// 		// @include outer-container;
+// 		text-align: center;
+// 		background: $red-orange;
+// 		color: white;
+// 		@include flex(1);
+// 		height: 250px;
+// 		padding-top: 50px;
+
+// 		@include media($medium-screen) {
+//        @include span-columns(8);
+//        height: 175px;
+//        padding-top: 20px;
+//        font-size: .9em;
+//        // border: 3px solid $lime;
+//     }
+
+// 		@include media($small-screen) {
+//        @include span-columns(4);
+//        height: 125px;
+//        padding-top: 0;
+//        font-size: .8em;
+//        border: 3px solid $lime;
+//     }
+// 	}
+
+// 	#main-wrapper {
+// 		// @include outer-container;
+// 		@include flex(2);
+// 		height: 400px;
+// 		background: $lime;
+
+
+// 		#search-area {
+
+// 			@include span-columns(4);
+// 			background: $orange-yellow;
+// 			height: 100%;
+
+
+// 			// @include media($medium-screen) {
+//    //     @include span-columns(3);
+//    //     font-size: .8em;
+//    //     // max-height: 150px;
+//    //  	}
+
+// 			// @include media($small-screen) {
+//    //     @include span-columns(4);
+//    //     font-size: .8em;
+//    //     max-height: 150px;
+//    //  	}
+
+// 			.search-bar {
+// 				width: 100%;
+// 				position: relative;
+
+// 				input {
+// 					box-sizing: border-box;
+// 					display: block;
+// 					margin: 0;
+// 					position: relative;
+// 					width: 100%;
+
+// 				}
+
+// 				button {
+// 					@include position(absolute, 0 0 0 null);
+// 					padding: 5px 10px;
+// 					background: $turquise;
+
+// 				}
+
+// 				img {
+// 					height: 12px;
+// 					opacity: 0.7;
+// 				}
+// 			}
+
+// 			#query-list {
+// 				// display: none;
+// 				// position: relative;
+// 				// top: 100%;
+// 				background: $orange-yellow;
+// 				max-height: 322px;
+// 				overflow: auto;
+// 				text-align: center;
+
+// 				li {
+// 					// position: absolute;
+// 					// z-index: 99;
+// 					width: 100%;
+// 				}
+// 			}
+
+// 			.search-item {
+// 				border: 2px solid white;
+// 				margin-bottom: 5px;
+
+// 				.qty-add-container {
+// 					@include outer-container;
+
+// 					#qty{
+// 						@include span-columns(2);
+// 						@include shift(1);
+// 					}
+// 					#number{
+// 						@include span-columns(2);
+// 					}
+// 					#button-add{
+// 						@include span-columns(4);
+// 						@include shift(2);
+// 					}
+// 				}
+
+// 				button {
+// 					padding-top: 0;
+// 					padding-bottom: 0;
+// 				}
+// 			}
+// 		}
+
+// 		section {
+// 			@include span-columns(4);
+// 			height: 100%;
+// 		}
+
+// 			// @include media($small-screen) {
+//    //     @include span-columns(4);
+//    //     font-size: .8em;
+//    //   }
+// 		// }
+
+// 		.food-list {
+// 			background: $orange-yellow;
+// 			overflow: auto;
+// 			text-align: center;
+// 			padding-top: 10px;
+
+// 			// @include media($medium-screen) {
+//    //     @include span-columns(4);
+//    //     font-size: .8em;
+//    //   }
+
+// 			// @include media($small-screen) {
+//    //     max-height: 150px;
+//    //     margin-top: 15px;
+//    //  	}
+
+// 			.view {
+// 				border: 2px solid white;
+// 				margin-bottom: 5px;
+
+// 				.food-info-container {
+// 					@include outer-container;
+
+// 					#calories{
+// 						@include span-columns(3);
+// 						// @include shift(1);
+// 					}
+// 					#qty{
+// 						@include span-columns(2);
+// 					}
+// 					#button-remove{
+// 						@include span-columns(4);
+// 						// @include shift(2);
+// 					}
+// 				}
+
+// 				button {
+// 					padding-top: 0;
+// 					padding-bottom: 0;
+// 				}
+// 			}
+
+// 		}
+
+// 		.pie-chart {
+// 			background: $orange-yellow;
+// 			text-align: center;
+// 			padding-top: 10px;
+
+// 			#totals {
+// 				font-size: 1.5em;
+// 			}
+
+// 			#plot1 {
+// 				height: 100%;
+// 			}
+
+// 			// @include media($medium-screen) {
+//    //     @include span-columns(8);
+//    //     font-size: .8em;
+//    //     max-height: 100px;
+//    //  	}
+
+// 			// @include media($small-screen) {
+//    //     max-height: 75px;
+//    //     margin-top: 15px;
+//    //  	}
+// 		}
+// 	}
+
+// 	footer {
+
+// 		// @include flex();
+// 		@include outer-container;
+// 		background: $turquise;
+// 		color: #F8FFFD;
+// 		text-align: center;
+// 		height: 100px;
+
+// 		h3 {
+// 			position: relative;
+//     	top: 50%;
+//     	transform: translateY(-50%);
+// 		}
+
+// 		@include media($medium-screen) {
+//        @include span-columns(8);
+//        max-height: 75px;
+//     	}
+
+// 		@include media($small-screen) {
+//        max-height: 50px;
+//     	}
+// }
+
+// }

@@ -15,36 +15,40 @@
             <h3>count calories today</h3>
         </header>
 
-        <main id="main-wrapper">
+        <div id="main-wrapper">
+            <div class="search-foodlist-col">
+                <div id="search-area">
+                    <!-- <h2 style="text-align:center; padding-top: 10px">Search</h2> -->
+                    <h2>Search</h2>
+                    <div class="search-bar">
+                        <!-- <form role="search"> -->
+                            <input type="text" placeholder="Enter a food here" id="query">
+                            <button type="submit" id="button">
+                                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png" alt="Search Icon">
+                            </button>
+                        <!-- </form> -->
+                    </div>
+                    <ul id="query-list"></ul>
 
-            <div id="search-area">
-                <h2 style="text-align:center; padding-top: 10px">Search</h2>
-                <div class="search-bar">
-                    <!-- <form role="search"> -->
-                        <input type="text" placeholder="Enter a food here" id="query">
-                        <button type="submit" id="button">
-                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png" alt="Search Icon">
-                        </button>
-                    <!-- </form> -->
                 </div>
-                <ul id="query-list"></ul>
 
+                <section class="food-list">
+                    <h2>Food list</h2>
+                    <!-- TODO: date picker -->
+                    <!-- <p>Date: <input type="text" id="datepicker"></p> -->
+                    <ul id="foods"></ul>
+                </section>
             </div>
 
-            <section class="food-list">
-                <h2>Food list</h2>
-                <!-- TODO: date picker -->
-                <!-- <p>Date: <input type="text" id="datepicker"></p> -->
-                <ul id="foods"></ul>
-            </section>
+            <div class="results-area">
+                <section class="pie-chart">
+                    <h2>Total Calories</h2>
+                    <div id="totals">0</div>
+                    <div id="plot1"></div>
+                </section>
+            </div>
 
-            <section class="pie-chart">
-                <h2>Total Calories</h2>
-                <div id="totals">0</div>
-                <div id="plot1"></div>
-            </section>
-
-        </main>
+        </div>
 
         <footer>
             <h3>you are what you eat & things aren't as they seem</h3>
